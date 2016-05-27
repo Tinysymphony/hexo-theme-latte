@@ -1,0 +1,45 @@
+#footer {
+	font-size: 12px;
+	font-family: Menlo, Monaco, "Andale Mono", "lucida console", "Courier New", monospace;
+	position: absolute;
+	bottom: 0;
+	margin-top: 20px;
+	padding: 50px 0;
+	width: 100%;
+	opacity: 0.8;
+	text-align: center;
+	.outer{
+		padding: 0 30px;
+	}
+	background-color: #243137;
+}
+#footer::before {
+	height: 17px;
+	top: -17px;
+	background-position: bottom;
+	background: url('../../img/footer-wave.svg') repeat-x;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	content: '';
+}
+.footer-left{
+	color: #fff;
+	float: left;
+}
+.footer-right{
+	a {
+		color: #7AFF7B;
+ 	}
+  	color: #fff;
+  	float: right;
+	text-align: right;
+}
+
+.footer-theme {
+	margin-top: 10px;
+}
+
+.footer-theme:first-child {
+	margin-top: 0;
+}
