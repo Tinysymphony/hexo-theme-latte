@@ -3,7 +3,6 @@ menu:
     主页: /
     所有文章: /archives
     # 随笔: /tags/随笔
-    TinyMint: "http://www.wytiny.com"
 
 # SubNav
 subnav:
@@ -23,8 +22,7 @@ rss: /atom.xml
 # Content
 excerpt_link: more
 fancybox: true
-mathjax: true
-
+mathjax: false
 # 是否开启动画效果
 animate: true
 
@@ -32,11 +30,11 @@ animate: true
 open_in_new: false
 
 # Miscellaneous
-google_analytics: ''
+google_analytics: 'UA-78495806-1'
 favicon: /favicon.png
 
 #你的头像url
-avatar: "http://7xjgb0.com1.z0.glb.clouddn.com/Selection_015.png"
+avatar: "http://7xjgb0.com1.z0.glb.clouddn.com/avatar-100kb.png"
 #是否开启分享
 share: true
 #是否开启多说评论，填写你在多说申请的项目名称 duoshuo: duoshuo-key

@@ -5,15 +5,16 @@ highlight-selection = #515151
 highlight-foreground = #ffffff
 highlight-comment = #a6e22e
 highlight-red = #f2777a
-highlight-orange = #66d9ef
+highlight-orange = #e97a1e
 highlight-yellow = #ffcc66
-highlight-green = #e6db74
+highlight-cyan= #32c1d0
+highlight-green= #55ab5c
 highlight-aqua = #66cccc
 highlight-blue = #6699cc
-highlight-purple = #f92672
+highlight-purple = #df1a61
 
 $code-block
-  background: #4D4D4D
+  background: #f5f5f5
   margin: 10px 0
   padding: 10px 10px
   overflow: auto
@@ -21,7 +22,7 @@ $code-block
   line-height: font-size * line-height
 
 $line-numbers
-  color: #888
+  color: #aaa
   font-size: 0.85em
 
 .article-entry
@@ -34,12 +35,12 @@ $line-numbers
     border: none
   pre
     @extend $code-block
-    color: #EEF8FC
+    color: #666
     code
       background: none
       text-shadow: none
       padding: 0
-      color: #EEF8FC
+      color: #666
   .highlight
     @extend $code-block
     pre
@@ -60,6 +61,8 @@ $line-numbers
       margin-bottom: 1em
       a
         float: right
+    .code
+      text-shadow: 0 1px #000
     .gutter pre
       @extend $line-numbers
       text-align: right
@@ -110,9 +113,9 @@ $line-numbers
 
 pre
   .comment
-    color: #ddd
+    color: #bfbfbf
   .title
-    color: highlight-comment
+    color: highlight-cyan
   .variable
   .attribute
   .tag

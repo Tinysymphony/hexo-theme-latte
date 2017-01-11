@@ -5,6 +5,7 @@
     <%- partial('_partial/left-col', null, {cache: !config.relative_link}) %>
     </div>
     <div class="mid-col">
+      <canvas id="canvas-points"></canvas>
       <%- partial('_partial/mobile-nav', null, {cache: !config.relative_link}) %>
       <div class="body-wrap"><%- body %></div>
       <%- partial('_partial/footer') %>

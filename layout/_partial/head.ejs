@@ -2,6 +2,12 @@
 <html>
 <head>
   <meta charset="utf-8">
+  <noscript>
+    <style media="screen">
+      body {display: none;}
+    </style>
+    <meta http-equiv="refresh" content="0; URL=http://nojs.wytiny.com/">
+  </noscript>
   <%
   var title = page.title;
 
@@ -29,5 +35,10 @@
     <link rel="icon" href="<%- theme.favicon %>">
   <% } %>
   <%- css('css/style') %>
-  <link href="http://fonts.useso.com/css?family=Lato:400,500,700&amp;subset=latin,latin-ext" rel="stylesheet">
+  <script type="text/javascript">
+  !function(t,e){t.LS={tag:"/*LSLOADER*/",jsQueue:[],jsmap:{},cssmap:{},getItem:function(e){var s="";try{s=t.localStorage.getItem(e)}catch(t){s=""}return s},removeItem:function(e){try{t.localStorage.removeItem(e)}catch(t){}},setItem:function(e,s){try{t.localStorage.setItem(e,s)}catch(t){}},load:function(t,e,s){var i=this.getItem(t);if(s=s||this.noop,!i)return this.loadFromSource(t,e,s);var n=i.split(this.tag)[0],o=i.split(this.tag)[1];return n==e&&o?void(/\.js$/.test(n)?(this.jsQueue.push({id:t,code:o,status:"unload"}),this.insertJS(t,o,s)):/\.css$/.test(n)?this.insertCSS(t,o,s):this.loadFromSource(t,e,s)):this.loadFromSource(t,e,s)},insertJS:function(t,e,s){if(s=s||this.noop,t&&e)for(var i in this.jsQueue)this.jsQueue[i].id===t&&(this.jsQueue[i].code=e);var n=document.getElementsByTagName("script")[0],o=document.createElement("script");if(this.jsQueue.length>0&&this.jsQueue[0].code&&"failed"!=this.jsQueue[0].status)o.appendChild(document.createTextNode(this.jsQueue[0].code)),n.parentNode.appendChild(o),s(),this.jsQueue.shift(),this.jsQueue.length>0&&this.insertJS();else if(this.jsQueue.length>0&&"failed"===this.jsQueue[0].status){var u=this;o.src=u.jsQueue[0].url,o.id=u.jsQueue[0].id,o.onload=function(){s(),u.jsQueue.shift(),u.jsQueue.length>0&&u.insertJS()},this.jsQueue.status="loading",n.parentNode.appendChild(o)}},insertCSS:function(t,e,s){document.getElementById(t).appendChild(document.createTextNode(e)),s()},loadFromSource:function(t,e,s){/\.js$/.test(e)?this.loadJS(t,e):/\.css$/.test(e)&&this.loadCSS(t,e,s)},loadJS:function(t,e){var s=this;s.jsQueue.push({id:t,url:e,code:""}),s.xhrLoad(e,function(i){s.setItem(t,e+s.tag+i),s.insertJS(t,i)},function(){s.tagLoadJS(t,e)})},loadCSS:function(t,e){var s=this;s.xhrLoad(e,function(i){s.setItem(t,e+s.tag+i),document.getElementById(t).appendChild(document.createTextNode(i))},function(){s.tagLoadCSS(t,e)})},tagLoadJS:function(t,e){if(!this.jsmap[t]){this.jsmap[t]=!0;for(var s in this.jsQueue)this.jsQueue[s].id==t&&(this.jsQueue[s].code="",this.jsQueue[s].status="failed",this.jsQueue[s].url=e);this.insertJS()}},tagLoadCSS:function(t,e,s){if(!this.cssmap[t]){this.cssmap[t]=!0;var i=document.createElement("link"),n=document.getElementsByTagName("head")[0];i.rel="stylesheet",i.href=e,i.charset="utf-8",i.onload=i.onerror=s||this.noop,n.appendChild(i)}},xhrLoad:function(t,e,s){e=e||this.noop,s=s||this.noop;var i=new XMLHttpRequest;try{i.open("get",t,!0),i.onreadystatechange=function(){4==i.readyState&&((i.status>=200&&i.status<300||304==i.status)&&""!=i.response&&e(i.response),s())},i.send()}catch(t){s()}},noop:function(){}}}(window,document);
+  </script>
+  <script type="text/javascript">
+    // LS.load('/css/style.css', );
+  </script>
 </head>
