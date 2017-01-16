@@ -89,9 +89,9 @@ define([], function(){
 		}, false);
 
 		//点击展示和隐藏
-		ctn.addEventListener("touchend", function(){
-			show();
-		}, false);
+		// ctn.addEventListener("touchend", function(){
+		// 	show();
+		// }, false);
 
 		var $right = document.getElementsByClassName("viewer-box-r")[0];
 		var touchStartTime;

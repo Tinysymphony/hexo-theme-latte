@@ -2,6 +2,9 @@
 menu:
     主页: /
     所有文章: /archives
+    DEMO: $J-demo
+    LINKS: $J-tags
+    About Me: $J-about
     # 随笔: /tags/随笔
 
 # SubNav
